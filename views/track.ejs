@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        row-gap: 10px;
+    }
+    
+</style>
+
+<body>
+    <form action="/track" method="post">
+        <label>Your age</label>
+        <input type="number" name="age">
+        <label>Is your menstrual cycle regular (varies no more than 7 days)</label>
+
+        <select name="regular" id="#sb">
+            <option value="Yes">YES</option>
+            <option value="No">NO</option>
+        </select>
+
+        <label>Average length of your period</label>
+        <input type="number" placeholder="In days" name="length">
+        <label>Last period start date</label>
+        <input name="lpdate" type="date" placeholder="DD/MM/YY/">
+
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h2 id="show"></h2>
+</body>
+</html>
