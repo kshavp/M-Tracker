@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .info{
+        display: none;
+    }
+</style>
+
+<body>
+<button onclick="fun1()">Today's Status</button>
+<button onclick="fun2()">Upcoming</button>
+<button onclick="fun3()">Cycle Details</button>
+<button onclick="fun4()">Upcoming 3 Months</button>
+
+<div id="root">
+    <h1 id="rootInfo"></h1>
+</div>
+
+<div class="info">
+    <h1 id="i1"> <%=pInfo1%> </h1>
+    <h1 id="i2"> <%=pInfo2%> </h1>
+    <h1 id="i3"> <%=pInfo2%> </h1>
+    <h1 id="i4"> <%=pInfo3%> </h1>
+</div>
+
+<h3>Provided information may vary, suggest an <a href="edit">edit</a>?</h3>
+
+<script>
+    const fun1 = ()=>{
+        let info = document.getElementById('i1').innerHTML;
+        let mainInfo = document.getElementById('rootInfo').innerHTML=info;
+        }
+    const fun2 = ()=>{
+        let info = document.getElementById('i2').innerHTML;
+        let mainInfo = document.getElementById('rootInfo').innerHTML=info;
+    }
+    const fun3 = ()=>{
+        let info = document.getElementById('i3').innerHTML;
+        let mainInfo = document.getElementById('rootInfo').innerHTML=info;
+    }
+    const fun4 = ()=>{
+        let info = document.getElementById('i4').innerHTML;
+        let mainInfo = document.getElementById('rootInfo').innerHTML=info;
+    }
+</script>
+
+</body>
+</html>
+
